@@ -3,5 +3,5 @@ h5py
 pyhocon
 numpy
 scipy
-sklearn-learn
+scikit-learn
 tqdm
