@@ -1,4 +1,6 @@
+grpcio==1.39.0
 tensorflow-gpu==1.7.0
+tensorflow-hub==0.4.0
 h5py
 pyhocon
 numpy
