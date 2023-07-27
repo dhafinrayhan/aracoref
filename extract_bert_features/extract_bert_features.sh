@@ -1,2 +1,2 @@
-export BERT_MODEL_PATH="./bert-large-arabertv02/tf-large-arabertv02"
-PYTHONPATH=. python extract_features.py --input_file="train.arabic.jsonlines;dev.arabic.jsonlines;test.arabic.jsonlines" --output_file=bert_large_arabertv02_features.hdf5 --bert_config_file ./bert-large-arabertv02/tf-large-arabertv02/config.json --init_checkpoint ./bert-large-arabertv02/tf-large-arabertv02/model.ckpt --vocab_file  ./bert-large-arabertv02/tf-large-arabertv02/vocab.txt --do_lower_case=False --stride 1 --window_size 511
+export BERT_MODEL_PATH="./bert-large-arabertv2/tf-large-arabertv2"
+PYTHONPATH=. python extract_features.py --input_file="train.arabic.jsonlines;dev.arabic.jsonlines;test.arabic.jsonlines" --output_file=bert_large_arabertv2_features.hdf5 --bert_config_file $BERT_MODEL_PATH/config.json --init_checkpoint $BERT_MODEL_PATH/model.ckpt --vocab_file  $BERT_MODEL_PATH/vocab.txt --do_lower_case=False --stride 1 --window_size 511
