@@ -32,4 +32,4 @@ if __name__ == '__main__':
         sentences = doc['sentences']
         clean_sentences = [[clean_text(t) for t in sent] for sent in sentences]
         doc['sentences'] = clean_sentences
-        writer.write(json.dumps(doc)+'\n')
+        writer.write(json.dumps(doc, ensure_ascii=False)+'\n')
